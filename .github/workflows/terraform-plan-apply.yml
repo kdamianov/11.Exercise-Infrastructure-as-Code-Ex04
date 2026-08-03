@@ -49,6 +49,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Login to Azure
+      uses: azure/login@v3
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+
     - name: Download Terraform Plan
       uses: actions/download-artifact@v4
       with:
