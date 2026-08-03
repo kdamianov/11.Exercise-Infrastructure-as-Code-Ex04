@@ -15,7 +15,7 @@ terraform {
     storage_account_name = "taskboardstoragekalin"
     container_name       = "taskboardstoragefolder"
     key                  = "terraform.tfstate"
-    }
+  }
 }
 
 provider "azurerm" {
